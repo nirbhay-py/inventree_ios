@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fAT-sy-X4j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fAT-sy-X4j">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -687,7 +687,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c97-rr-GZG">
-                                <rect key="frame" x="20" y="292.5" width="335" height="33"/>
+                                <rect key="frame" x="20" y="293.5" width="335" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Click here to take a photo">
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -707,7 +707,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIB-rl-9bQ">
-                                <rect key="frame" x="20" y="335.5" width="335" height="30"/>
+                                <rect key="frame" x="20" y="336.5" width="335" height="30"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                 <state key="normal" title="Click here to learn about how we handle issues">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -723,7 +723,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ztF-7r-qqQ">
-                                <rect key="frame" x="20" y="262.5" width="335" height="20"/>
+                                <rect key="frame" x="20" y="262.5" width="335" height="21"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1219,7 +1219,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gNM-uE-cYE" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="-436.5" y="50" width="1248" height="150"/>
+                                <rect key="frame" x="-124.5" y="50" width="624" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="EmM-Xf-UaF"/>
                                 </constraints>
@@ -2455,7 +2455,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGs-Pr-9kT">
-                                <rect key="frame" x="72" y="426" width="108" height="50"/>
+                                <rect key="frame" x="72" y="426" width="283" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="dLC-6a-Lde"/>
                                     <constraint firstAttribute="height" constant="50" id="daB-Ux-2ds"/>
@@ -2479,7 +2479,6 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8Tp-KL-nXj" firstAttribute="top" secondItem="3gT-0s-GhZ" secondAttribute="bottom" constant="20" id="0IZ-hm-iGT"/>
                             <constraint firstItem="8rS-wt-p6c" firstAttribute="trailing" secondItem="px2-Xg-pHz" secondAttribute="trailing" constant="20" id="0tg-hY-zk5"/>
                             <constraint firstItem="MGs-Pr-9kT" firstAttribute="leading" secondItem="pdf-Ap-aSY" secondAttribute="trailing" constant="10" id="1ys-Ll-Fq8"/>
                             <constraint firstItem="3gT-0s-GhZ" firstAttribute="leading" secondItem="8rS-wt-p6c" secondAttribute="leading" constant="20" id="3oR-vG-cZh"/>
@@ -2493,14 +2492,15 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                             <constraint firstItem="pdf-Ap-aSY" firstAttribute="leading" secondItem="8rS-wt-p6c" secondAttribute="leading" constant="20" id="K1D-nU-Am6"/>
                             <constraint firstItem="aI3-Rk-Uin" firstAttribute="centerY" secondItem="px2-Xg-pHz" secondAttribute="centerY" id="KqI-ht-CV0"/>
                             <constraint firstItem="px2-Xg-pHz" firstAttribute="leading" secondItem="aI3-Rk-Uin" secondAttribute="trailing" constant="10" id="QOO-iM-mbe"/>
-                            <constraint firstItem="aI3-Rk-Uin" firstAttribute="top" secondItem="8Tp-KL-nXj" secondAttribute="bottom" constant="28" id="XaX-uE-pHJ"/>
-                            <constraint firstItem="8Tp-KL-nXj" firstAttribute="top" secondItem="3gT-0s-GhZ" secondAttribute="bottom" constant="28" id="YUs-Uw-Ufc"/>
+                            <constraint firstItem="FYm-mP-ePM" firstAttribute="top" secondItem="yHK-et-hMR" secondAttribute="bottom" constant="20" id="XRP-y1-xPh"/>
+                            <constraint firstItem="8rS-wt-p6c" firstAttribute="trailing" secondItem="MGs-Pr-9kT" secondAttribute="trailing" constant="20" id="ZyG-iX-OHh"/>
                             <constraint firstItem="8Tp-KL-nXj" firstAttribute="leading" secondItem="8rS-wt-p6c" secondAttribute="leading" constant="20" id="a6K-Kd-DJV"/>
                             <constraint firstItem="adJ-oU-drf" firstAttribute="centerY" secondItem="KJ5-7Q-Khk" secondAttribute="centerY" id="cBI-6i-4Q8"/>
                             <constraint firstItem="adJ-oU-drf" firstAttribute="leading" secondItem="8rS-wt-p6c" secondAttribute="leading" constant="20" id="d3h-Sc-KEl"/>
                             <constraint firstItem="MGs-Pr-9kT" firstAttribute="leading" secondItem="pdf-Ap-aSY" secondAttribute="trailing" constant="10" id="eaX-CK-WNT"/>
-                            <constraint firstItem="pdf-Ap-aSY" firstAttribute="top" secondItem="aI3-Rk-Uin" secondAttribute="bottom" constant="28" id="gtR-bN-dSS"/>
+                            <constraint firstItem="MGs-Pr-9kT" firstAttribute="top" secondItem="px2-Xg-pHz" secondAttribute="bottom" constant="20" id="hPu-c1-1mv"/>
                             <constraint firstItem="KJ5-7Q-Khk" firstAttribute="leading" secondItem="adJ-oU-drf" secondAttribute="trailing" constant="10" id="hXz-zq-ycj"/>
+                            <constraint firstItem="8rS-wt-p6c" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MGs-Pr-9kT" secondAttribute="trailing" symbolic="YES" id="iGa-sy-EPz"/>
                             <constraint firstItem="8Tp-KL-nXj" firstAttribute="centerY" secondItem="FYm-mP-ePM" secondAttribute="centerY" id="kw4-uM-s7y"/>
                             <constraint firstItem="hfa-tn-dFN" firstAttribute="top" secondItem="KJ5-7Q-Khk" secondAttribute="bottom" constant="20" id="kzC-fi-9VM"/>
                             <constraint firstItem="px2-Xg-pHz" firstAttribute="leading" secondItem="aI3-Rk-Uin" secondAttribute="trailing" constant="10" id="leo-dN-bsG"/>
@@ -2512,10 +2512,9 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                             <constraint firstItem="pdf-Ap-aSY" firstAttribute="centerY" secondItem="MGs-Pr-9kT" secondAttribute="centerY" id="qoT-Ji-4go"/>
                             <constraint firstItem="aI3-Rk-Uin" firstAttribute="leading" secondItem="8rS-wt-p6c" secondAttribute="leading" constant="20" id="rqe-0x-uP5"/>
                             <constraint firstItem="8rS-wt-p6c" firstAttribute="trailing" secondItem="FYm-mP-ePM" secondAttribute="trailing" constant="20" id="ucP-Zz-hDR"/>
-                            <constraint firstItem="aI3-Rk-Uin" firstAttribute="top" secondItem="8Tp-KL-nXj" secondAttribute="bottom" constant="28" id="uhN-SD-phn"/>
                             <constraint firstItem="aI3-Rk-Uin" firstAttribute="leading" secondItem="8rS-wt-p6c" secondAttribute="leading" constant="20" id="vBR-Lr-ojY"/>
+                            <constraint firstItem="px2-Xg-pHz" firstAttribute="top" secondItem="FYm-mP-ePM" secondAttribute="bottom" constant="20" id="x2S-kJ-Ekm"/>
                             <constraint firstItem="yHK-et-hMR" firstAttribute="leading" secondItem="3gT-0s-GhZ" secondAttribute="trailing" constant="10" id="xkg-Rf-cb8"/>
-                            <constraint firstItem="aI3-Rk-Uin" firstAttribute="top" secondItem="8Tp-KL-nXj" secondAttribute="bottom" constant="20" id="ymb-ih-ueh"/>
                             <constraint firstItem="Ve3-3B-yHj" firstAttribute="top" secondItem="8rS-wt-p6c" secondAttribute="top" constant="20" id="zR0-LE-ePp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8rS-wt-p6c"/>
@@ -4323,58 +4322,58 @@ The selected region also faces extremely poor air quality, and research conducte
             <point key="canvasLocation" x="-562" y="0.0"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Qlc-Oq-eiC"/>
+        <segue reference="MgV-GM-Pwf"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_1797" width="1125" height="1468"/>
         <image name="IMG_8882-1" width="298" height="398"/>
-        <image name="calendar.circle" catalog="system" width="64" height="60"/>
-        <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
-        <image name="checkmark.circle" catalog="system" width="64" height="60"/>
-        <image name="chevron.up.circle" catalog="system" width="64" height="60"/>
-        <image name="doc.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="calendar.circle" catalog="system" width="128" height="121"/>
+        <image name="chart.bar.fill" catalog="system" width="128" height="89"/>
+        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+        <image name="chevron.up.circle" catalog="system" width="128" height="121"/>
+        <image name="doc.circle.fill" catalog="system" width="128" height="121"/>
         <image name="dollar" width="512" height="512"/>
-        <image name="dot.radiowaves.left.and.right" catalog="system" width="64" height="44"/>
-        <image name="exclamationmark.circle" catalog="system" width="64" height="60"/>
-        <image name="exclamationmark.triangle" catalog="system" width="64" height="56"/>
-        <image name="eye" catalog="system" width="64" height="40"/>
-        <image name="eyeglasses" catalog="system" width="64" height="26"/>
-        <image name="flag.circle" catalog="system" width="64" height="60"/>
+        <image name="dot.radiowaves.left.and.right" catalog="system" width="128" height="89"/>
+        <image name="exclamationmark.circle" catalog="system" width="128" height="121"/>
+        <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
+        <image name="eye" catalog="system" width="128" height="81"/>
+        <image name="eyeglasses" catalog="system" width="128" height="54"/>
+        <image name="flag.circle" catalog="system" width="128" height="121"/>
         <image name="hands" width="512" height="512"/>
-        <image name="house" catalog="system" width="64" height="54"/>
-        <image name="info" catalog="system" width="46" height="64"/>
-        <image name="info.circle" catalog="system" width="64" height="60"/>
-        <image name="info.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="leaf.arrow.circlepath" catalog="system" width="60" height="64"/>
-        <image name="location.circle" catalog="system" width="64" height="60"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="leaf.arrow.circlepath" catalog="system" width="121" height="128"/>
+        <image name="location.circle" catalog="system" width="128" height="121"/>
         <image name="logo" width="624" height="1084"/>
-        <image name="map.fill" catalog="system" width="64" height="56"/>
-        <image name="mappin.circle" catalog="system" width="64" height="60"/>
-        <image name="mappin.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="pencil.and.ellipsis.rectangle" catalog="system" width="64" height="40"/>
-        <image name="person" catalog="system" width="64" height="58"/>
-        <image name="person.2.square.stack.fill" catalog="system" width="56" height="64"/>
-        <image name="person.3" catalog="system" width="72" height="35"/>
-        <image name="person.circle" catalog="system" width="64" height="60"/>
-        <image name="person.crop.circle" catalog="system" width="64" height="60"/>
-        <image name="personalhotspot" catalog="system" width="64" height="36"/>
-        <image name="phone.circle" catalog="system" width="64" height="60"/>
+        <image name="map.fill" catalog="system" width="128" height="113"/>
+        <image name="mappin.circle" catalog="system" width="128" height="121"/>
+        <image name="mappin.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="pencil.and.ellipsis.rectangle" catalog="system" width="128" height="81"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.2.square.stack.fill" catalog="system" width="113" height="128"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="personalhotspot" catalog="system" width="128" height="75"/>
+        <image name="phone.circle" catalog="system" width="128" height="121"/>
         <image name="plus" width="512" height="512"/>
-        <image name="plus.circle" catalog="system" width="64" height="60"/>
-        <image name="plus.square.fill" catalog="system" width="64" height="56"/>
-        <image name="rectangle.3.offgrid" catalog="system" width="64" height="40"/>
-        <image name="rectangle.grid.2x2" catalog="system" width="64" height="48"/>
-        <image name="slider.horizontal.3" catalog="system" width="64" height="50"/>
-        <image name="slowmo" catalog="system" width="64" height="60"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.square.fill" catalog="system" width="128" height="114"/>
+        <image name="rectangle.3.offgrid" catalog="system" width="128" height="80"/>
+        <image name="rectangle.grid.2x2" catalog="system" width="128" height="99"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
+        <image name="slowmo" catalog="system" width="128" height="122"/>
         <image name="spade" width="512" height="512"/>
-        <image name="star.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="tag" catalog="system" width="64" height="58"/>
-        <image name="w.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="waveform.circle" catalog="system" width="64" height="60"/>
+        <image name="star.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="tag" catalog="system" width="128" height="116"/>
+        <image name="w.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="waveform.circle" catalog="system" width="128" height="121"/>
         <namedColor name="mainAccent">
             <color red="0.16078431372549021" green="0.51372549019607838" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="VoH-Ft-Xl9"/>
-        <segue reference="MgV-GM-Pwf"/>
-    </inferredMetricsTieBreakers>
 </document>
