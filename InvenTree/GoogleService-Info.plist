@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>159828869902-pd6mp3tmsf3ok1m7pb9p1sgdkeb6frpu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.159828869902-pd6mp3tmsf3ok1m7pb9p1sgdkeb6frpu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCxvEYQsHELMw2IfNA2a20h_SY3n1DElMc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>159828869902</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ArnavGhatiwala.InvenTree</string>
+	<key>PROJECT_ID</key>
+	<string>inventree-a2522</string>
+	<key>STORAGE_BUCKET</key>
+	<string>inventree-a2522.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:159828869902:ios:99ddeb51bcafeebed2cd5f</string>
+	<key>DATABASE_URL</key>
+	<string>https://inventree-a2522.firebaseio.com</string>
+</dict>
+</plist>
