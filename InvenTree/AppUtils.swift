@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 import SCLAlertView
-
+import StoreKit
 func showAlert(msg:String){
     SCLAlertView().showError("Oops!", subTitle:msg)
 }
@@ -452,3 +452,9 @@ extension UIView {
         }
     }
 }
+
+
+func requestToRate() {
+    SKStoreReviewController.requestReview()
+}
+

@@ -10,10 +10,20 @@ import UIKit
 import CoreLocation
 import Firebase
 import JGProgressHUD
-
+import MapKit
 class epsCell:UITableViewCell{
-    @IBOutlet weak var distLbl: UILabel!
+
+    @IBOutlet weak var openLoc: UIButton!
+    
+    @IBAction func openLocPressed(_ sender: Any) {
+        let source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: self.coords.latitude, longitude: self.coords.longitude)))
+               source.name = "You"
+        let destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: self.cell_eps.loc.latitude, longitude: self.cell_eps.loc.longitude)))
+        destination.name = "Empty planting site."
+               MKMapItem.openMaps(with: [source, destination], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving])
+    }
     var cell_eps:eps!
+    var coords:CLLocationCoordinate2D!
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var areaLbl: UILabel!
@@ -79,7 +89,7 @@ class epsTableVC: UIViewController,UITableViewDelegate,UITableViewDataSource,CLL
         cell.areaLbl.text = "\(cell.cell_eps.area.round(to: 2)) sq. mt."
         cell.areaLbl.adjustsFontSizeToFitWidth = true
         cell.img.load(url: URL(string: cell.cell_eps.url)!)
-        cell.distLbl.text = "\(cell.cell_eps.dist.round(to: 2)) km away from you."
+        cell.coords = self.coords
            return cell
         
        }

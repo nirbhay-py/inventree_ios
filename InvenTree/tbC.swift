@@ -7,12 +7,16 @@
 //
 
 import UIKit
-
+import StoreKit
 class tbC: UITabBarController {
-
+    @objc func rateTapped(){
+        SKStoreReviewController.requestReview()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true);
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Rate us ⭐️", style: .plain, target: self, action: #selector(rateTapped))
     }
     
 
