@@ -284,7 +284,7 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate{
         mainView.addTarget(self, action: #selector(self.showBenefitsDetails), for: .touchUpInside)
         var benLbl = UILabel(frame: CGRect(x: 0, y: 0, width: mainView.frame.width, height: 40))
         benLbl.center = CGPoint(x:mainView.frame.width/2, y:mainView.frame.height/2)
-        benLbl.text = "We've saved ₹\(total.round(to: 2)). Learn more."
+        benLbl.text = "Learn about tree benefits."
         benLbl.textAlignment = .center
         benLbl.adjustsFontSizeToFitWidth = true
         benLbl.textColor = UIColor.systemGreen
