@@ -214,10 +214,10 @@
             </objects>
             <point key="canvasLocation" x="876" y="689.5052473763119"/>
         </scene>
-        <!--AqiVC-->
+        <!--AQI-->
         <scene sceneID="GSc-GR-RXC">
             <objects>
-                <viewController id="QlI-Ir-2DP" customClass="aqiVC" customModule="InvenTree" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="AQI" id="QlI-Ir-2DP" customClass="aqiVC" customModule="InvenTree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="owg-rs-PWn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1059,7 +1059,7 @@
         <!--Map-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="mapVC" customModule="InvenTree" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map" id="8rJ-Kc-sve" customClass="mapVC" customModule="InvenTree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1953,10 +1953,10 @@
             </objects>
             <point key="canvasLocation" x="4276" y="-1283"/>
         </scene>
-        <!--View Controller-->
+        <!--Our mission-->
         <scene sceneID="tAD-6X-NEI">
             <objects>
-                <viewController id="ApB-wA-Zkd" sceneMemberID="viewController">
+                <viewController title="Our mission" id="ApB-wA-Zkd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s5f-3W-iYP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2526,10 +2526,10 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
             </objects>
             <point key="canvasLocation" x="1629.5999999999999" y="-690.40479760119945"/>
         </scene>
-        <!--View BenVC-->
+        <!--View benefits-->
         <scene sceneID="K9Z-cT-Ovt">
             <objects>
-                <viewController id="apg-Rj-BGd" customClass="viewBenVC" customModule="InvenTree" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="View benefits" id="apg-Rj-BGd" customClass="viewBenVC" customModule="InvenTree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kXE-5y-pP3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2616,7 +2616,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hk0-bB-EEP">
-                                        <rect key="frame" x="294" y="112" width="71" height="20.5"/>
+                                        <rect key="frame" x="255" y="112" width="110" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2699,8 +2699,8 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                         <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Stormwater Runoff Avoided (₹)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF0-T8-Ujd">
-                                        <rect key="frame" x="20" y="112.5" width="264" height="19.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stormwater Runoff Avoided (₹)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF0-T8-Ujd">
+                                        <rect key="frame" x="20" y="112.5" width="225" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2913,8 +2913,8 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzB-Xe-c5Z">
-                                                    <rect key="frame" x="115" y="139.5" width="235" height="33"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VzB-Xe-c5Z">
+                                                    <rect key="frame" x="120" y="140" width="230" height="33"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <state key="normal" title="Request to be removed">
                                                         <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2960,10 +2960,9 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                                 <constraint firstItem="vOa-Q7-zBv" firstAttribute="centerY" secondItem="eSd-xB-tV4" secondAttribute="centerY" id="ApJ-CE-Any"/>
                                                 <constraint firstItem="57w-du-QuN" firstAttribute="top" secondItem="eSd-xB-tV4" secondAttribute="bottom" constant="10" id="BRM-ch-MVv"/>
                                                 <constraint firstItem="B41-HG-rGz" firstAttribute="centerY" secondItem="vOa-Q7-zBv" secondAttribute="centerY" id="CJw-Y7-sPy"/>
-                                                <constraint firstItem="VzB-Xe-c5Z" firstAttribute="leading" secondItem="HXL-WH-nRw" secondAttribute="trailing" constant="10" id="DqA-0h-v8j"/>
                                                 <constraint firstItem="nIg-lZ-q3J" firstAttribute="centerY" secondItem="yAg-mH-anr" secondAttribute="centerY" id="JhS-lo-vKB"/>
-                                                <constraint firstItem="VzB-Xe-c5Z" firstAttribute="leading" secondItem="HXL-WH-nRw" secondAttribute="trailing" constant="10" id="N0Q-To-7Ug"/>
-                                                <constraint firstItem="VzB-Xe-c5Z" firstAttribute="leading" secondItem="HXL-WH-nRw" secondAttribute="trailing" constant="10" id="Rst-Zl-uHk"/>
+                                                <constraint firstItem="VzB-Xe-c5Z" firstAttribute="top" secondItem="57w-du-QuN" secondAttribute="bottom" constant="5" id="OOO-HO-Pfp"/>
+                                                <constraint firstItem="VzB-Xe-c5Z" firstAttribute="leading" secondItem="HXL-WH-nRw" secondAttribute="trailing" constant="15" id="Rst-Zl-uHk"/>
                                                 <constraint firstItem="HXL-WH-nRw" firstAttribute="top" secondItem="bfN-bS-rET" secondAttribute="top" constant="5" id="Xg3-FK-dZV"/>
                                                 <constraint firstItem="57w-du-QuN" firstAttribute="leading" secondItem="HXL-WH-nRw" secondAttribute="trailing" constant="15" id="cbv-5M-9t9"/>
                                                 <constraint firstItem="B41-HG-rGz" firstAttribute="leading" secondItem="vOa-Q7-zBv" secondAttribute="trailing" constant="10" id="chu-Vv-ISB"/>
@@ -2972,6 +2971,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                                 <constraint firstAttribute="trailingMargin" secondItem="VzB-Xe-c5Z" secondAttribute="trailing" constant="10" id="gTY-YS-hGD"/>
                                                 <constraint firstItem="D9T-Lp-ne2" firstAttribute="leading" secondItem="nIg-lZ-q3J" secondAttribute="trailing" constant="10" id="get-zx-Bps"/>
                                                 <constraint firstItem="yAg-mH-anr" firstAttribute="top" secondItem="bfN-bS-rET" secondAttribute="topMargin" constant="10" id="kki-i9-tXk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VzB-Xe-c5Z" secondAttribute="trailing" constant="10" id="nMA-Dj-rKc"/>
                                                 <constraint firstItem="vOa-Q7-zBv" firstAttribute="leading" secondItem="eSd-xB-tV4" secondAttribute="trailing" constant="10" id="oPK-Bc-6U9"/>
                                                 <constraint firstItem="eSd-xB-tV4" firstAttribute="leading" secondItem="HXL-WH-nRw" secondAttribute="trailing" constant="10" id="qli-or-cQs"/>
                                                 <constraint firstItem="D9T-Lp-ne2" firstAttribute="centerY" secondItem="nIg-lZ-q3J" secondAttribute="centerY" id="rae-TF-y99"/>
@@ -3013,11 +3013,11 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
             </objects>
             <point key="canvasLocation" x="3162.4000000000001" y="-695.80209895052474"/>
         </scene>
-        <!--TbC-->
+        <!--Inventree-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" customClass="tbC" customModule="InvenTree" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="xWe-vz-m82"/>
+                    <navigationItem key="navigationItem" title="Inventree" id="xWe-vz-m82"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -4326,7 +4326,7 @@ The selected region also faces extremely poor air quality, and research conducte
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5EK-gs-zXc"/>
+        <segue reference="VoH-Ft-Xl9"/>
         <segue reference="AMd-R0-wxi"/>
     </inferredMetricsTieBreakers>
     <resources>

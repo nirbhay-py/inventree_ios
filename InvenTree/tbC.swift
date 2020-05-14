@@ -16,7 +16,7 @@ class tbC: UITabBarController {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true);
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Rate us ⭐️", style: .plain, target: self, action: #selector(rateTapped))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Rate us.", style: .plain, target: self, action: #selector(rateTapped))
     }
     
 

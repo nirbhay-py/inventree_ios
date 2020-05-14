@@ -81,8 +81,9 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate{
         let ref = Database.database().reference().child("trees-node")
         _ = ref.observe(DataEventType.value, with: { (snapshot) in
             let reports = snapshot.value as! [String:AnyObject]
-            let markerImg = UIImage(named: "tree")
+            let markerImg = UIImage(named: "tree-1")
             self.treesCount = reports.count
+            print(self.treesCount)
             for report in reports{
                 let lat = report.value["location-lat"] as! Double
                 let lon = report.value["location-lon"] as! Double
@@ -93,7 +94,7 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate{
                 let diameter = report.value["diameter"] as! String
                 let position = CLLocationCoordinate2D(latitude: lat, longitude: lon)
                 let marker = GMSMarker(position: position)
-                marker.title = species
+                marker.title = "Tree"
                 marker.icon = markerImg
                 var snippetStr = "Uploaded by: \(name)"
                 if(height != ""){
@@ -105,6 +106,9 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate{
                 if(diameter != ""){
                     snippetStr += "\nDiameter(m): \(diameter)"
                 }
+                if(species != ""){
+                    snippetStr += "\nSpecies: \(species)"
+                }
                 marker.snippet = snippetStr
                 marker.map = self.mapView
             }
@@ -112,7 +116,7 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate{
         let issue_ref = Database.database().reference().child("issue-node")
         _ = issue_ref.observe(DataEventType.value, with: { (snapshot) in
             let reports = snapshot.value as! [String:AnyObject]
-            let warningImg = UIImage(named: "warning")
+            let warningImg = UIImage(named: "warningImg")
             let resolvedImg = UIImage(named:"resolved")
             for report in reports{
                 let lat = report.value["location-lat"] as! Double
@@ -124,17 +128,15 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate{
                 let resolved = report.value["issue-resolved"] as! Bool
                 let position = CLLocationCoordinate2D(latitude: lat, longitude: lon)
                 let marker = GMSMarker(position: position)
+                marker.title = "Issue"
+                var str = ""
                 if(desc=="Other"){
-                    marker.title = report.value["issue-details"] as! String ?? "Other"
+                     str  = report.value["issue-details"] as! String ?? "Other"
                 }else{
-                    marker.title = desc
+                     str  = desc
                 }
-                if(resolved){
-                    marker.icon = resolvedImg
-                }else{
-                    marker.icon = warningImg
-                }
-                var str = "Uploaded by:" + String(name)
+                marker.icon = warningImg
+                str += "\nUploaded by:" + String(name)
                 str += "\nUpvotes:" + String(upvotes)
                 marker.snippet = str
                 marker.map = self.mapView
@@ -143,7 +145,7 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate{
             let drive_ref = Database.database().reference().child("drives-node")
             _ = drive_ref.observe(DataEventType.value, with: { (snapshot) in
                 let reports = snapshot.value as! [String:AnyObject]
-                let img = UIImage(named: "drive")
+                let img = UIImage(named: "drive-1")
                 for report in reports{
                     let lat = report.value["location-lat"] as! Double
                     let lon = report.value["location-lon"] as! Double
@@ -156,12 +158,13 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate{
                     let position = CLLocationCoordinate2D(latitude: lat, longitude: lon)
                     let marker = GMSMarker(position: position)
                     marker.icon = img
-                    marker.title = time
+                    marker.title = "Planting drive"
                     var str = "Organised by: " + String(name)
                     str += "\nPhone: " + phone
                     str += "\nAttending: " + String(attendees)
                     str += "\nVolunteers needed: " + String(needed)
                     str += " Goal: " + goal + " trees"
+                    str += " Time: " + time
                     marker.snippet = str
                     marker.map = self.mapView
                 }
@@ -169,7 +172,7 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate{
         let eps_ref = Database.database().reference().child("eps-node")
         _ = eps_ref.observe(DataEventType.value, with: { (snapshot) in
             let reports = snapshot.value as! [String:AnyObject]
-            let markerImg = UIImage(named: "empty")
+            let markerImg = UIImage(named: "empty-1")
             for report in reports{
                 let lat = report.value["location-lat"] as! Double
                 let lon = report.value["location-lon"] as! Double
@@ -284,7 +287,7 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate{
         mainView.addTarget(self, action: #selector(self.showBenefitsDetails), for: .touchUpInside)
         var benLbl = UILabel(frame: CGRect(x: 0, y: 0, width: mainView.frame.width, height: 40))
         benLbl.center = CGPoint(x:mainView.frame.width/2, y:mainView.frame.height/2)
-        benLbl.text = "Learn about tree benefits."
+        benLbl.text = "Learn about ecosystem benefits."
         benLbl.textAlignment = .center
         benLbl.adjustsFontSizeToFitWidth = true
         benLbl.textColor = UIColor.systemGreen
