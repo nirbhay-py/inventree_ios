@@ -50,6 +50,7 @@
 		1CE43BC423FF2DDD00052D94 /* addTreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE43BC323FF2DDD00052D94 /* addTreeVC.swift */; };
 		1CE43BC623FF4AE900052D94 /* mapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE43BC523FF4AE900052D94 /* mapVC.swift */; };
 		1CF37AE12457C448005C57C2 /* editProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF37AE02457C448005C57C2 /* editProfileVC.swift */; };
+		1CFE54442484044B00D90625 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1CFE54432484044A00D90625 /* MobileNetV2.mlmodel */; };
 		708B4897245D7C6E00FD4504 /* partnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708B4896245D7C6E00FD4504 /* partnersViewController.swift */; };
 		708B4899245D7C9700FD4504 /* ourmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708B4898245D7C9700FD4504 /* ourmissionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -112,6 +113,7 @@
 		1CE43BC323FF2DDD00052D94 /* addTreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTreeVC.swift; sourceTree = "<group>"; };
 		1CE43BC523FF4AE900052D94 /* mapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapVC.swift; sourceTree = "<group>"; };
 		1CF37AE02457C448005C57C2 /* editProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editProfileVC.swift; sourceTree = "<group>"; };
+		1CFE54432484044A00D90625 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		3424E67706127FFDAD207708 /* Pods-InvenTree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvenTree.debug.xcconfig"; path = "Target Support Files/Pods-InvenTree/Pods-InvenTree.debug.xcconfig"; sourceTree = "<group>"; };
 		708B4896245D7C6E00FD4504 /* partnersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partnersViewController.swift; sourceTree = "<group>"; };
 		708B4898245D7C9700FD4504 /* ourmissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ourmissionViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				1CB14251242C473C0037C77C /* Drive.swift */,
 				1CE2B3B1242DA0B200DCDF1D /* hubVC.swift */,
 				1CE2B3B3242DA89D00DCDF1D /* yourDrivesVC.swift */,
+				1CFE54432484044A00D90625 /* MobileNetV2.mlmodel */,
 				1CE2B3B5242DACEB00DCDF1D /* Drive2.swift */,
 				1CE2B3B7242DAD2100DCDF1D /* Attendee.swift */,
 				1CE2B3B9242DBAFE00DCDF1D /* cellDetailsVC.swift */,
@@ -370,6 +373,7 @@
 				1CF37AE12457C448005C57C2 /* editProfileVC.swift in Sources */,
 				1CB14252242C473C0037C77C /* Drive.swift in Sources */,
 				1CE2B3B4242DA89D00DCDF1D /* yourDrivesVC.swift in Sources */,
+				1CFE54442484044B00D90625 /* MobileNetV2.mlmodel in Sources */,
 				1CB84AE02440B72D008A53C9 /* tbC.swift in Sources */,
 				1C8D0960243DECEA00918D55 /* treeKeyVC.swift in Sources */,
 				1C48B6A52429CC570099FC73 /* hostDriveVC.swift in Sources */,

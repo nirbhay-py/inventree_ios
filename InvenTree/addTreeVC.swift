@@ -13,7 +13,7 @@ import GoogleMaps
 import SearchTextField
 import JGProgressHUD
 import SafariServices
-
+import CoreML
 class addTreeVC: UIViewController,CLLocationManagerDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet weak var searchTxtBox: SearchTextField!
@@ -26,7 +26,7 @@ class addTreeVC: UIViewController,CLLocationManagerDelegate,UIImagePickerControl
     var coord:CLLocationCoordinate2D!
     var imgData:Data!
     let imagePicker = UIImagePickerController()
-
+    let mobilenet = MobileNetV2()
     @IBOutlet weak var thumbnail: UIImageView!
     
     @IBOutlet weak var heightTf: UITextField!
@@ -194,7 +194,17 @@ class addTreeVC: UIViewController,CLLocationManagerDelegate,UIImagePickerControl
         if(self.imgData==nil){
             showAlert(msg: "You cannot proceed without selecting an image to upload.")
         }else{
-            self.performSegue(withIdentifier: "proceed", sender: nil)
+            if let imagebuffer = convertImage(image: UIImage(data:self.imgData)!) {
+                if let prediction = try? mobilenet.prediction(image: imagebuffer){
+                    print(prediction.classLabel)
+                    if(prediction.classLabel.contains("tree")||prediction.classLabel.contains("flower")||prediction.classLabel.contains("pot")){
+                        self.performSegue(withIdentifier: "proceed", sender: nil)
+                        
+                    }else{
+                        showAlert(msg: "That image does not look like a tree. If it is indeed a tree, please ensure the photo taken includes the tree bark and leaves. If this issue persists, please contact us.")
+                    }
+                }
+            }
         }
     }
     func resetFields(){
@@ -206,6 +216,59 @@ class addTreeVC: UIViewController,CLLocationManagerDelegate,UIImagePickerControl
         
         let svc = SFSafariViewController(url: URL(string:"http://flowersofindia.net/treeid/index.html")!)
         present(svc, animated: true, completion: nil)
+    }
+    // convert A image to cv Pixel Buffer with 224*224
+      func convertImage(image: UIImage) -> CVPixelBuffer? {
+      
+        let newSize = CGSize(width: 224.0, height: 224.0)
+        UIGraphicsBeginImageContext(newSize)
+        image.draw(in: CGRect(origin: CGPoint.zero, size: newSize))
+        
+        guard let resizedImage = UIGraphicsGetImageFromCurrentImageContext() else {
+            return nil
+        }
+        
+        UIGraphicsEndImageContext()
+        
+        // convert to pixel buffer
+        
+        let attributes = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue,
+                          kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
+        var pixelBuffer: CVPixelBuffer?
+        let status = CVPixelBufferCreate(kCFAllocatorDefault,
+                                         Int(newSize.width),
+                                         Int(newSize.height),
+                                         kCVPixelFormatType_32ARGB,
+                                         attributes,
+                                         &pixelBuffer)
+        
+        guard let createdPixelBuffer = pixelBuffer, status == kCVReturnSuccess else {
+            return nil
+        }
+        
+        CVPixelBufferLockBaseAddress(createdPixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
+        let pixelData = CVPixelBufferGetBaseAddress(createdPixelBuffer)
+        
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        guard let context = CGContext(data: pixelData,
+                                      width: Int(newSize.width),
+                                      height: Int(newSize.height),
+                                      bitsPerComponent: 8,
+                                      bytesPerRow: CVPixelBufferGetBytesPerRow(createdPixelBuffer),
+                                      space: colorSpace,
+                                      bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue) else {
+                                        return nil
+        }
+        
+        context.translateBy(x: 0, y: newSize.height)
+        context.scaleBy(x: 1.0, y: -1.0)
+        
+        UIGraphicsPushContext(context)
+        resizedImage.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
+        UIGraphicsPopContext()
+        CVPixelBufferUnlockBaseAddress(createdPixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
+        
+        return createdPixelBuffer
     }
 }
 

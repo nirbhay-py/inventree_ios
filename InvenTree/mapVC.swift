@@ -336,7 +336,7 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate,GMUCl
         v3lbl.textColor = UIColor.white
         v3lbl.font = v3lbl.font.withSize(20)
         v3lbl.textAlignment = .center
-        v3lbl.text = "Normal"
+        v3lbl.text = "Satellite"
         self.mapView.addSubview(v3)
         v3.addSubview(v3lbl)
         

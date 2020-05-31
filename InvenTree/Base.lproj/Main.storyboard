@@ -3057,7 +3057,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFg-yO-M6Q">
-                                <rect key="frame" x="75" y="243" width="280" height="50"/>
+                                <rect key="frame" x="75" y="213" width="280" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GGg-iO-s7h"/>
@@ -3071,7 +3071,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fcK-Tl-idd">
-                                <rect key="frame" x="20" y="248.5" width="40" height="39"/>
+                                <rect key="frame" x="20" y="218.5" width="40" height="39"/>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="DcJ-4Y-Kih"/>
@@ -3079,7 +3079,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56a-LJ-7KJ">
-                                <rect key="frame" x="75" y="308" width="280" height="50"/>
+                                <rect key="frame" x="75" y="278" width="280" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Hdl-zy-6ZH"/>
@@ -3093,7 +3093,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot.radiowaves.left.and.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a79-mX-eNi">
-                                <rect key="frame" x="20" y="314" width="40" height="38.5"/>
+                                <rect key="frame" x="20" y="284" width="40" height="38.5"/>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="KeW-aN-fZz"/>
@@ -3101,7 +3101,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j62-D7-HUf">
-                                <rect key="frame" x="75" y="373" width="100" height="50"/>
+                                <rect key="frame" x="75" y="343" width="100" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pRN-n1-v23"/>
@@ -3115,7 +3115,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" catalog="system" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWk-tW-pJu">
-                                <rect key="frame" x="20" y="377.5" width="40" height="39.5"/>
+                                <rect key="frame" x="20" y="347.5" width="40" height="39.5"/>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="REZ-Np-2ya"/>
@@ -3123,7 +3123,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yM8-hB-EAl">
-                                <rect key="frame" x="75" y="438" width="280" height="50"/>
+                                <rect key="frame" x="75" y="408" width="280" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0aK-pg-hfw"/>
@@ -3137,7 +3137,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yj9-PI-pCf">
-                                <rect key="frame" x="20" y="444.5" width="40" height="37.5"/>
+                                <rect key="frame" x="20" y="414.5" width="40" height="37.5"/>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="DN9-4h-apW"/>
@@ -3145,7 +3145,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t74-5I-C2z">
-                                <rect key="frame" x="75" y="503" width="280" height="50"/>
+                                <rect key="frame" x="75" y="473" width="280" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FVU-mB-zvG"/>
@@ -3159,7 +3159,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personalhotspot" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sVr-tz-aBE">
-                                <rect key="frame" x="20" y="510" width="40" height="36"/>
+                                <rect key="frame" x="20" y="480" width="40" height="36"/>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ly3-MV-bpo"/>
@@ -3176,7 +3176,7 @@ InvenTree is a constantly growing platform that serves as both a medium of educa
                             <constraint firstItem="yM8-hB-EAl" firstAttribute="top" secondItem="j62-D7-HUf" secondAttribute="bottom" constant="15" id="Jkx-en-1HE"/>
                             <constraint firstItem="p7h-DS-inD" firstAttribute="leading" secondItem="jFK-Sy-9Ym" secondAttribute="leading" constant="20" id="K8i-s5-lut"/>
                             <constraint firstItem="jFK-Sy-9Ym" firstAttribute="trailing" secondItem="56a-LJ-7KJ" secondAttribute="trailing" constant="20" id="Kgr-7i-e5j"/>
-                            <constraint firstItem="LFg-yO-M6Q" firstAttribute="top" secondItem="p7h-DS-inD" secondAttribute="bottom" constant="50" id="LU9-BA-TXX"/>
+                            <constraint firstItem="LFg-yO-M6Q" firstAttribute="top" secondItem="p7h-DS-inD" secondAttribute="bottom" constant="20" id="LU9-BA-TXX"/>
                             <constraint firstItem="56a-LJ-7KJ" firstAttribute="centerY" secondItem="a79-mX-eNi" secondAttribute="centerY" id="Mb9-Wh-Mov"/>
                             <constraint firstItem="56a-LJ-7KJ" firstAttribute="top" secondItem="LFg-yO-M6Q" secondAttribute="bottom" constant="15" id="O7q-cU-ybv"/>
                             <constraint firstItem="56a-LJ-7KJ" firstAttribute="leading" secondItem="a79-mX-eNi" secondAttribute="trailing" constant="15" id="OXE-6D-9mc"/>
