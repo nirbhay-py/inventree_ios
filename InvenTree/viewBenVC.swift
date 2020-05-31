@@ -8,6 +8,16 @@
 
 import UIKit
 
+extension Double{
+    func prettify() -> String{
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        guard let formattedNumber = numberFormatter.string(from: NSNumber(value: self)) else { return "empty" }
+        return formattedNumber
+    }
+}
+ 
+
 class viewBenVC: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -58,19 +68,19 @@ class viewBenVC: UIViewController {
     }
     
     func popLbls(){
-        tbLbl.text = String((Double(treesCount) * tb).round(to: 2))
-        co2Lbl.text = String((Double(treesCount) * co2).round(to: 2))
-        stormwaterlbl.text = String((Double(treesCount) * stormwater).round(to: 2))
-        aplbl.text = String((Double(treesCount) * ap).round(to: 2))
-        energyusglbl.text = String((Double(treesCount) * energy).round(to: 2))
-        avoidedLbl.text = String((Double(treesCount) * avoided).round(to: 2))
-        cmonolbl.text = String((Double(treesCount) * co).round(to: 2))
-        ozonelbl.text = String((Double(treesCount) * ozone).round(to: 2))
-        no2lbl.text = String((Double(treesCount) * no2).round(to: 2))
-        so2lbl.text = String((Double(treesCount) * so2).round(to: 2))
-        pmlbl.text = String((Double(treesCount) * pm).round(to: 2))
-        esavingslbl.text = String((Double(treesCount) * es).round(to: 2))
-        fuelsavingslbl.text = String((Double(treesCount) * fs).round(to: 2))
+        tbLbl.text = String((Double(treesCount) * tb).round(to: 2).prettify())
+        co2Lbl.text = String ((Double(treesCount) * co2).round(to: 2).prettify())
+        stormwaterlbl.text = String((Double(treesCount) * stormwater).round(to: 2).prettify())
+        aplbl.text = String((Double(treesCount) * ap).round(to: 2).prettify())
+        energyusglbl.text = String((Double(treesCount) * energy).round(to: 2).prettify())
+        avoidedLbl.text = String((Double(treesCount) * avoided).round(to: 2).prettify())
+        cmonolbl.text = String((Double(treesCount) * co).round(to: 2).prettify())
+        ozonelbl.text = String((Double(treesCount) * ozone).round(to: 2).prettify())
+        no2lbl.text = String((Double(treesCount) * no2).round(to: 2).prettify())
+        so2lbl.text = String((Double(treesCount) * so2).round(to: 2).prettify())
+        pmlbl.text = String((Double(treesCount) * pm).round(to: 2).prettify())
+        esavingslbl.text = String((Double(treesCount) * es).round(to: 2).prettify())
+        fuelsavingslbl.text = String((Double(treesCount) * fs).round(to: 2).prettify())
     }
 
     /*

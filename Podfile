@@ -18,8 +18,7 @@ pod 'Firebase/Auth'
 pod "SearchTextField"
 pod 'SwiftyJSON', '~> 4.0'
 pod 'JGProgressHUD'
-pod 'OnboardKit'
-pod 'GoogleSignIn'
+pod "Google-Maps-iOS-Utils"
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
 pod 'Alamofire', '~> 5.0.0-rc.3'
 

@@ -23,7 +23,13 @@ class signInVC: UIViewController
     @IBOutlet weak var emailTf: UITextField!
     @IBOutlet weak var pswdTf: UITextField!
     
+    @IBOutlet weak var loginBtn: DesignableButton!
     
+    @IBOutlet weak var signUpBtn: DesignableButton!
+    
+    @IBOutlet weak var forgotpswdBtn: UIButton!
+    
+    @IBOutlet weak var infoBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +46,7 @@ class signInVC: UIViewController
     override func viewDidAppear(_ animated: Bool) {
            if(Auth.auth().currentUser != nil){
                print("user not nil")
+
                let localHud = JGProgressHUD.init()
                localHud.show(in: self.view,animated: true)
                //MARK:FETCH DATA FROM FIREBASE, INITIALISE A USERCLASS OBJECT AND PASS IT IN THE SEGUE
