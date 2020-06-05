@@ -14,6 +14,7 @@ import SearchTextField
 import JGProgressHUD
 import SafariServices
 import CoreML
+import SCLAlertView
 class addTreeVC: UIViewController,CLLocationManagerDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet weak var searchTxtBox: SearchTextField!
@@ -201,7 +202,8 @@ class addTreeVC: UIViewController,CLLocationManagerDelegate,UIImagePickerControl
                         self.performSegue(withIdentifier: "proceed", sender: nil)
                         
                     }else{
-                        showAlert(msg: "That image does not look like a tree. If it is indeed a tree, please ensure the photo taken includes the tree bark and leaves. If this issue persists, please contact us.")
+                        SCLAlertView().showWarning("Warning", subTitle: "Our proprietary ML model haas flagged this picture as possible spam. This tree will be marked as possible spam in our database and will be verified and, if applicable, removed by our team later.")
+                        self.performSegue(withIdentifier: "proceed", sender: nil)
                     }
                 }
             }

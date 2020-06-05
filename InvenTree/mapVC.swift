@@ -135,6 +135,8 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate,GMUCl
             let markerImg = UIImage(named: "tree-1")
             self.treesCount = reports.count
             print(self.treesCount)
+            var i:Int!
+            i = 1
             for report in reports{
                 let lat = report.value["location-lat"] as! Double
                 let lon = report.value["location-lon"] as! Double
@@ -144,9 +146,8 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate,GMUCl
                 let age = report.value["age"] as! String
                 let diameter = report.value["diameter"] as! String
                 let position = CLLocationCoordinate2D(latitude: lat, longitude: lon)
-                var heatcoord = GMUWeightedLatLng(coordinate: position, intensity: 100.0)
+                let heatcoord = GMUWeightedLatLng(coordinate: position, intensity: 100.0)
                 self.list.append(heatcoord)
-//                marker.map = self.mapView
                 let item = treeMarker(name: name, species: species, height: height, diameter: diameter, age: age, pos: position)
                 self.clusterManager.add(item)
                 self.clusterItems.append(item)
@@ -336,7 +337,7 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate,GMUCl
         v3lbl.textColor = UIColor.white
         v3lbl.font = v3lbl.font.withSize(20)
         v3lbl.textAlignment = .center
-        v3lbl.text = "Satellite"
+        v3lbl.text = "Toggle"
         self.mapView.addSubview(v3)
         v3.addSubview(v3lbl)
         
@@ -349,7 +350,7 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate,GMUCl
         if(!self.isHeatMap){
             v2lbl.text = "Heatmap"
         }else{
-            v2lbl.text = "Normal"
+            v2lbl.text = "Count"
         }
         v2.addSubview(v2lbl)
         self.mapView.addSubview(v2)
@@ -365,11 +366,9 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate,GMUCl
     @objc func changeMapType(sender: UIButton!) {
         if(self.isSat){
             self.isSat = false
-            v3lbl.text = "Normal"
             self.mapView.mapType = .normal
         }
         else{
-            v3lbl.text = "Satellite"
             self.isSat = true
             self.mapView.mapType = .satellite
         }
@@ -506,7 +505,7 @@ class mapVC: UIViewController,CLLocationManagerDelegate,GMSMapViewDelegate,GMUCl
             break
         }
         } else {
-            showAlert(msg: "Looks like you've disabled location services. The InvenTree Map won't be rendered until location services are enabled.")
+            print("not enabled")
     }
 
     }
