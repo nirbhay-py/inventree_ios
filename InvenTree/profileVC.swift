@@ -19,11 +19,11 @@ class profileVC: UIViewController {
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var descLbl: UILabel!
     @IBOutlet weak var tblbl: UILabel!
-    let c02:Double = 1.15749 * 65
-    let stormwater:Double = 2.47053 * 65
-    let ap:Double = 52.41663 * 65
-    let energy:Double = 49.26375 * 65
-    let avoided:Double = 6.32553 * 65
+    let c02:Double = 1.15749
+    let stormwater:Double = 2.47053
+    let ap:Double = 52.41663
+    let energy:Double = 49.26375
+    let avoided:Double = 6.32553
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Your Profile"
@@ -44,7 +44,7 @@ class profileVC: UIViewController {
         let avoidedres = (trees * (avoided)).round(to:2)
         let total = co2res + stormres + apres + energyres + avoidedres
         
-        tblbl.text = String("₹"+String((total).round(to: 2)))
+        tblbl.text = String("$"+String((((total).round(to: 2))).kmFormatted))
         // Do any additional setup after loading the view.
         if(trees<11){
             titleLbl.text = "Seedling"
@@ -65,7 +65,7 @@ class profileVC: UIViewController {
         let energyres = (trees * (energy)).round(to:2)
         let avoidedres = (trees * (avoided)).round(to:2)
         let total = co2res + stormres + apres + energyres + avoidedres
-        let str = " Total benefits: ₹\(total.round(to: 2))\n CO2 Sequestered: ₹\(co2res)\n Stormwater runoff avoided: ₹\(stormres)\n Air pollution removed: ₹\(apres)\n Total energy usage: ₹\(energyres)\n Total energy emissions avoided: ₹\(avoidedres)"
+        let str = " Total benefits: $\(total.round(to: 2))\n CO2 Sequestered: $\(co2res)\n Stormwater runoff avoided: $\(stormres)\n Air pollution removed: $\(apres)\n Total energy usage: $\(energyres)\n Total energy emissions avoided: $\(avoidedres)"
         showInfo(msg: str)
     }
     

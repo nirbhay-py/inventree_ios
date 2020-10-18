@@ -32,13 +32,13 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>&quot;We need to access your camera so that you can upload pictures of trees/issues/sites to our database?&quot;</string>
+	<string>"We need to access your camera so that you can upload pictures of trees/issues/sites to our database?"</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>&quot;We need to access your location to add trees/issues/sites to our database&quot;</string>
+	<string>"We need to access your location to add trees/issues/sites to our database"</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>&quot;We need to access your location to add trees/issues/sites to our database&quot;</string>
+	<string>"We need to access your location to add trees/issues/sites to our database"</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>&quot;We need to access your photo library so that you can upload pictures of trees/issues/sites to our database?&quot;</string>
+	<string>"We need to access your photo library so that you can upload pictures of trees/issues/sites to our database?"</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
